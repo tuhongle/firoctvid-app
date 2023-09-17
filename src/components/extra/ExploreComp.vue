@@ -1,5 +1,5 @@
 <template>
-    <div  class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5" ref="exploreCards">
+    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5" ref="exploreCards">
         <TransitionGroup name="card" appear>
             <div class="col mb-3" v-for="(item, index) in computedExplores" :key="index">
                 <MovieTVCard :card="item"/>

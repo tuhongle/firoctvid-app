@@ -1,11 +1,6 @@
 <template>
   <Suspense>
-    <div>
-      <ExplorePage :type="(Route.params.type === 'movie') ? 'Movies' : 'TV Shows'"/>
-    </div>
-    <template #fallback>
-      Loading...
-    </template>
+    <ExplorePage :type="(Route.params.type === 'movie') ? 'Movies' : 'TV Shows'"/>
   </Suspense>
 </template>
 

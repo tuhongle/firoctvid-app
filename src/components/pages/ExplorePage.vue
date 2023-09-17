@@ -53,7 +53,11 @@
             <Suspense>
                 <ExploreComp :type="type" />
                 <template #fallback>
-                    Loading...
+                    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+                        <div class="col mb-3" v-for="n in 10" :key="n" style="min-height: 250px !important;">
+                            <AnimationLoader />
+                        </div>
+                    </div>
                 </template>
             </Suspense>
         <!-- ======= -->
@@ -63,6 +67,7 @@
 
 <script setup lang="ts">
 import ExploreComp from '../extra/ExploreComp.vue'
+import AnimationLoader from '../extra/AnimationLoader.vue'
 import { useVidStore } from '../../stores/vidStore'
 import { computed, ref } from 'vue'
 

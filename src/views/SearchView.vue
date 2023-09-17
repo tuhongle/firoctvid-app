@@ -1,11 +1,6 @@
 <template>
   <Suspense>
-    <div>
       <SearchPage :query="(Route.params.id as string)"/>
-    </div>
-    <template #fallback>
-      Loading...
-    </template>
   </Suspense>
 </template>
 

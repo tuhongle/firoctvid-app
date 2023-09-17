@@ -120,9 +120,15 @@ export const useVidStore = defineStore('vid', () => {
                 videos.value = data.results;
                 break;
             case urlTales.value[3]:
+                data.results = data.results.map((el: MoviesTVCardType) => {
+                    return { media_type: `${type}`, ...el}
+                });
                 similar.value = data.results;
                 break;
             case urlTales.value[4]:
+                data.results = data.results.map((el: MoviesTVCardType) => {
+                    return { media_type: `${type}`, ...el}
+                });
                 recommend.value = data.results;
                 break;
         }

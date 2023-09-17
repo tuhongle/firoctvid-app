@@ -10,7 +10,11 @@
             <Suspense>
                 <SearchComp :query="query" />
                 <template #fallback>
-                    Loading...
+                    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+                        <div class="col mb-3" v-for="n in 10" :key="n" style="min-height: 250px !important;">
+                            <AnimationLoader />
+                        </div>
+                    </div>
                 </template>
             </Suspense>
         <!-- ======= -->
