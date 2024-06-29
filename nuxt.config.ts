@@ -8,8 +8,9 @@ export default defineNuxtConfig({
         ital: [100, 300, 400, 700, 900]
       }
     }
-  }], "@nuxt/eslint"],
+  }], "@nuxt/eslint", 'nuxt-swiper'],
   pinia: {
     storesDirs: ['./stores/**'],
   },
+  css: ['~/assets/css/main.css'],
 })

@@ -7,3 +7,7 @@
         font-family: 'lato', sans-serif;
     }
 }
+
+html {
+    background-color: rgba(0, 0, 0, 0.9);
+}

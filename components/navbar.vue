@@ -9,10 +9,10 @@
             </NuxtLink>
             <ul class="flex items-center justify-between ms-auto gap-8">
                 <li class="hidden md:block text-2xl text-white hover:text-pink-500 hover:cursor-pointer transition-all">
-                    <NuxtLink>Movies</NuxtLink>
+                    <NuxtLink to="/explore/movies">Movies</NuxtLink>
                 </li>
                 <li class="hidden md:block text-2xl text-white hover:text-pink-500 hover:cursor-pointer transition-all">
-                    <NuxtLink>TV Shows</NuxtLink>
+                    <NuxtLink to="/explore/tv">TV Shows</NuxtLink>
                 </li>
                 <li>
                     <UButton icon="i-heroicons-magnifying-glass-20-solid" class="text-white hover:text-pink-500" size="xl" variant="none"></UButton>
@@ -31,7 +31,3 @@
 
 
 </script>
-
-<style scoped>
-
-</style>
