@@ -9,7 +9,7 @@ export default <Partial<Config>>{
         video: '16 / 9'
       },
       fontFamily : {
-        'lato': 'Lato',
+        'inter': 'Inter',
       },
       colors: {
         'orange': {
