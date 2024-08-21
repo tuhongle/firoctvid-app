@@ -12,7 +12,7 @@ export default defineNuxtConfig({
         wght: [100, 200, 300, 400, 500, 600, 700, 800, 900],
       }
     }
-  }], "@nuxt/eslint", 'nuxt-swiper', "@nuxtjs/i18n", "nuxt-vuefire"],
+  }], "@nuxt/eslint", 'nuxt-swiper', "@nuxtjs/i18n", "nuxt-vuefire", '@vueuse/nuxt'],
 
   i18n: {
     vueI18n: './i18n.config.ts',

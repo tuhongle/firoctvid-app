@@ -6,6 +6,74 @@
     html {
         font-family: 'inter', sans-serif;
     }
+
+    .terms {
+        h2 {
+            @apply text-3xl font-bold mb-6;
+        }
+        
+        h3 {
+            @apply text-2xl font-bold mb-4;
+        }
+        
+        p {
+            @apply text-lg mb-4 leading-8;
+        
+            strong {
+                @apply text-xl;
+            }
+        
+            a {
+                @apply underline text-orange-500 hover:cursor-pointer;
+            }
+        }
+        
+        ul {
+            @apply list-disc;
+        
+            li {
+                @apply ml-6 mb-3;
+            }
+        }
+    }
+
+    .privacy {
+        h1 {
+            @apply text-4xl font-bold mb-8;
+        }
+        
+        h2 {
+            @apply text-3xl font-bold mb-6;
+        }
+        
+        h3 {
+            @apply text-2xl font-bold mb-4;
+        }
+        
+        h4 {
+            @apply text-xl font-bold mb-4;
+        }
+        
+        p {
+            @apply text-lg mb-4 leading-8 px-2;
+        
+            strong {
+                @apply text-xl;
+            }
+        
+            a {
+                @apply underline text-orange-500 hover:cursor-pointer;
+            }
+        }
+        
+        ul {
+            @apply list-disc;
+        
+            li {
+                @apply ml-6 mb-3;
+            }
+        }
+    }
 }
 
 html {

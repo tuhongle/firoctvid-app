@@ -30,20 +30,28 @@
     class="default-swiper"
     >
         <SwiperSlide v-for="item in array" :key="item.id">
-            <MovieCard v-if="type === 'movie-tv'" :item />
+
+            <MovieCard v-if="type === 'movie-tv'" :item :color="vidStore.getColor(item)!" />
+
             <PersonalCard v-else-if="type === 'person'" :item />
+
             <VideoFrame v-else :item />
+
         </SwiperSlide>
     </Swiper>
 </template>
 
 <script setup lang="ts">
 import 'swiper/scss/navigation';
+import type { MovieTv } from '~/types/vidType';
 
 const props = defineProps<{
     type: string,
     array: any[],
 }>();
+
+const vidStore = useVidStore();
+
 </script>
 
 <style lang="scss">

@@ -38,6 +38,7 @@ export default <Partial<Config>>{
           '900': '#821932',
           '950': '#4f0818',
         },
+        'bodydark': '#04152d',
       }
     }
   }
